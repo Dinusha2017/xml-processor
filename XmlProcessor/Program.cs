@@ -1,14 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Xml;
+using XmlProcessor.Common;
 
 Console.WriteLine("Hello, let's read the XML!");
 
 try
 {
-    XmlDocument xmlDocument = new XmlDocument();
-    xmlDocument.Load(Path.Combine(Directory.GetCurrentDirectory(), "EmployeeData.xml"));
+    XmlHelper xmlHelper = new();
+    XmlDocument employeeXml = xmlHelper.LoadXmlDocument("EmployeeData.xml");
 
-    XmlNodeList? nodeList = xmlDocument.DocumentElement!.SelectNodes("employee");
+    XmlNodeList? nodeList = employeeXml.DocumentElement!.SelectNodes("employee");
     if (nodeList != null)
     {
         foreach (XmlNode node in nodeList)
