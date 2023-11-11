@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<employees>
+	<employee id="01">
+		<name>Anne</name>
+		<email>anne@gmail.com</email>
+		<contact_number>+94777888999</contact_number>
+		<address>
+			<city>Colombo</city>
+			<country>Sri Lanka</country>
+		</address>
+	</employee>
+	<employee id="02">
+		<name>Paul</name>
+		<email>paul@gmail.com</email>
+		<contact_number>+94777884455</contact_number>
+		<address>
+			<city>Colombo</city>
+			<country>Sri Lanka</country>
+		</address>
+	</employee>
+	<employee id="03">
+		<name>George</name>
+		<email>george@gmail.com</email>
+		<contact_number>+94772348999</contact_number>
+		<address>
+			<city>Gampaha</city>
+			<country>Sri Lanka</country>
+		</address>
+	</employee>
+</employees>
